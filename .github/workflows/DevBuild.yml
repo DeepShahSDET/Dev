@@ -14,7 +14,6 @@ jobs:
       - name: trigger the automated test in another repo
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: '${{ secrets.REPO_ACCESS_TOKEN }}'
           repository: DeepShahSDET/QA
           event-type: Integration-with-Automation
       - name: my-step
